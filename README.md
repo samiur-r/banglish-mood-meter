@@ -19,22 +19,26 @@ These instructions will help you set up the project on your local machine for de
 
 ````bash
 git clone https://github.com/samiur-r/banglish-mood-meter
+````
 
 2. Navigate to the project directory:
 
 ```bash
 cd banglish-sentiment-analysis
+````
 
 3. Add your Replicate API token to .env.local:
 
 ```bash
 REPLICATE_API_TOKEN=<your-token-here>
+````
 
 
 4. Install the dependencies:
 
 ```bash
 npm install
+````
 
 5. Run the development server:
 
