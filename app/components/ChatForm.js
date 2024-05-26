@@ -1,10 +1,16 @@
 import Metrics from "./Metrics";
-import { Turnstile } from '@marsidev/react-turnstile';
+import { Turnstile } from "@marsidev/react-turnstile";
 
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
-
-const ChatForm = ({ prompt, setPrompt, onSubmit, metrics, completion, disabled }) => {
+const ChatForm = ({
+  prompt,
+  setPrompt,
+  onSubmit,
+  metrics,
+  completion,
+  disabled,
+}) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (disabled) {
@@ -53,7 +59,7 @@ const ChatForm = ({ prompt, setPrompt, onSubmit, metrics, completion, disabled }
             type="submit"
             disabled={disabled}
           >
-            Chat
+            Analyze
           </button>
         </form>
       </div>

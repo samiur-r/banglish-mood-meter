@@ -84,6 +84,8 @@ async function runLlama({
     model: model,
     stream: true,
     input: {
+      system_prompt:
+        "You are a sentiment analyser. Your answer should be in one word: any of the following: positive, negative or neutral",
       prompt: `${prompt}`,
       max_new_tokens: maxTokens,
       ...(model.includes("llama3")
